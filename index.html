@@ -1,155 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recent Blog Posts</title>
-    <link rel="stylesheet" href="blog.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recent Blog Posts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+  <main class="w-full h-full relative">
+    <!-- Hero Section -->
+    <section class="pt-28 pb-16  from-purple-200 via-purple-100 to-white" style="background-image: radial-gradient(circle farthest-corner at 125% 100%, #fff 19%, rgba(255, 255, 255, 0) 41%), linear-gradient(38deg, rgba(255, 255, 255, 0) 78%, rgba(255, 255, 255, 0.6901960784)), linear-gradient(45deg, #fff 10%, rgba(255, 255, 255, 0) 22%), linear-gradient(0deg, #fff, rgba(255, 255, 255, 0) 91%), radial-gradient(circle farthest-corner at 0 -50%, rgba(255, 255, 255, 0) 15%, rgba(112, 207, 255, 0.5882352941) 38%, rgba(255, 255, 255, 0) 65%), repeating-linear-gradient(214deg, rgba(255, 255, 255, 0), rgba(97, 76, 255, 0.3019607843) 25%, rgba(255, 255, 255, 0) 71%), repeating-linear-gradient(212deg, rgba(255, 255, 255, 0) 51%, rgba(124, 20, 252, 0.231372549) 64%, rgba(255, 255, 255, 0) 80%);">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="uppercase text-sm font-bold tracking-widest text-blue-900">Blog | MiniCodeLeader</h1>
+        <p class="mt-4 text-xl font-semibold">
+          1:1 online coding classes for next-gen technologies like Coding, AI, Robotics and more for your kids (ages 6–16).
+        </p>
+      </div>
+    </section>
 
-<body class="Blog-body">
-    <main class="w-full h-full Blog-col relative" role="main">
-        <section class="Blog-section-top Blog-bg-gradient-primary">
-            <div class="Blog-container"> <!-- DESC: Heading -->
-                <div class="Blog-wrapper-lg mx-auto text-center">
-                    <h1 class="overline-medium text-blue-800">Blog | MiniCodeLeader</h1>
-                    <p class="mt-4 h5">1:1 online coding classes for next-gen technologies like Coding, AI, Robotics and
-                        more for your kids (ages 6–16).</p>
-                </div>
+    <!-- Recent Posts -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <span class="uppercase text-sm font-bold text-gray-600">Recent posts</span>
+        <div class="h-[1px] bg-gray-300 mt-4 mb-8"></div>
+
+        <!-- First Post -->
+        <article class="flex flex-col lg:flex-row gap-12 group">
+          <figure class="lg:w-1/2">
+            <a href="fun-projects.html" class="block rounded-2xl overflow-hidden">
+              <img src="https://images.pexels.com/photos/4143791/pexels-photo-4143791.jpeg" alt="Child learning coding" class="aspect-[8/5] object-cover transition duration-500 group-hover:scale-105" />
+            </a>
+          </figure>
+          <div class="flex flex-col gap-4 justify-center lg:w-1/2">
+            <p class="flex items-center gap-2 text-sm font-medium text-gray-600">
+              <a href="fun-projects.html" class="px-3 py-1 bg-gray-100 hover:bg-gray-300 hover:text-black rounded-full transition">Coding</a>
+              <span class="w-8 h-px bg-gray-400"></span>
+              <time datetime="2025-05-12">May 12, 2025</time>
+            </p>
+            <h2 class="text-xl font-semibold">
+              <a href="fun-projects.html" class="hover:underline">Fun Projects to Introduce Kids to Programming</a>
+            </h2>
+            <p class="text-gray-700">
+              Get your child started with coding using hands-on projects like interactive stories, games, and basic animations that spark creativity and logical thinking.
+            </p>
+          </div>
+        </article>
+
+        <!-- Other Posts -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+          <!-- Post 2 -->
+          <article class="flex flex-col gap-4 group">
+            <figure>
+              <a href="top-5-kid-friendly.html" class="block rounded-2xl overflow-hidden">
+                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Kids using tablets" class="aspect-[8/5] object-cover transition duration-500 group-hover:scale-105" />
+              </a>
+            </figure>
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center gap-2 text-sm font-medium text-gray-600">
+                <a href="top-5-kid-friendly.html" class="px-3 py-1 bg-gray-100 hover:bg-gray-300 hover:text-black rounded-full transition">Programming</a>
+                <span class="w-8 h-px bg-gray-400"></span>
+                <time datetime="2025-04-25">Apr 25, 2025</time>
+              </p>
+              <h3 class="text-lg font-semibold">
+                <a href="top-5-kid-friendly.html" class="hover:underline">Top 5 Kid-Friendly Coding Platforms in 2025</a>
+              </h3>
+              <p class="text-gray-700">Discover safe, engaging platforms like Scratch, Code.org, and Tynker that help kids explore the basics of programming through play.</p>
             </div>
-        </section>
+          </article>
 
-        <section class="Blog-section-tight">
-            <div class="Blog-container !gap-0">
-              <span class="overline-medium text-black-500">Recent posts</span>
-              <div class="Blog-divider mt-4 mb-8"></div>
-              <div class="Blog-col gap-14">
-          
-                <!-- Post 1 -->
-                <article class="grid grid-cols-2 md:grid-cols-1 gap-12 lg:gap-8 group">
-                  <figure class="col-span-1">
-                    <a href="fun-projects.html" class="block rounded-2xl overflow-hidden">
-                      <picture>
-                        <source srcset="https://images.pexels.com/photos/4143791/pexels-photo-4143791.jpeg" media="(min-width: 769px)">
-                        <img src="https://images.pexels.com/photos/4143791/pexels-photo-4143791.jpeg" alt="Child learning coding with colorful blocks" loading="lazy" class="aspect-eightbyfive md:aspect-twobyone !object-cover scale-100 group-hover:scale-105 duration-500 object-center object-contain">
-                      </picture>
-                    </a>
-                  </figure>
-                  <div class="col-span-1 py-12 lg:py-4 md:py-0 Blog-col gap-4 underline-offset-4">
-                    <p class="Blog-row items-center gap-2 smalltext-medium text-black-500">
-                      <a href="fun-projects.html" class="px-3 py-1 bg-black-50 hover:bg-black-200 hover:text-black-900 rounded-full transition-all duration-300">Coding</a>
-                      <span class="w-8 h-[1px] bg-black-400"></span>
-                      <time datetime="2025-05-12T12:00:00Z"> May 12, 2025 </time>
-                    </p>
-                    <header>
-                      <h2 class="h3 md:h4">
-                        <a href="fun-projects.html" class="group-hover:underline">Fun Projects to Introduce Kids to Programming</a>
-                      </h2>
-                    </header>
-                    <p class="body-regular text-black-700 line-clamp-3">
-                      Get your child started with coding using hands-on projects like interactive stories, games, and basic animations that spark creativity and logical thinking.
-                    </p>
-                  </div>
-                </article>
-          
-                <!-- Grid of Posts -->
-                <div class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-x-8 gap-y-16">
-          
-                  <!-- Post 2 -->
-                  <article class="Blog-col gap-4 group">
-                    <figure>
-                      <a href="top-5-kid-friendly.html" class="block rounded-2xl overflow-hidden">
-                        <picture>
-                          <source srcset="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" media="(min-width: 769px)">
-                          <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Kids using tablets to learn programming" loading="lazy" class="aspect-eightbyfive md:aspect-twobyone !object-cover scale-100 group-hover:scale-105 duration-500 object-center object-contain">
-                        </picture>
-                      </a>
-                    </figure>
-                    <div class="Blog-col gap-3 underline-offset-4">
-                      <p class="Blog-row items-center gap-2 smalltext-medium text-black-500">
-                        <a href="top-5-kid-friendly.html" class="px-3 py-1 bg-black-50 hover:bg-black-200 hover:text-black-900 rounded-full transition-all duration-300">Programming</a>
-                        <span class="w-8 h-[1px] bg-black-400"></span>
-                        <time datetime="2025-04-25T09:00:00Z"> Apr 25, 2025 </time>
-                      </p>
-                      <div class="space-y-2">
-                        <header>
-                          <h2 class="h4">
-                            <a href="top-5-kid-friendly.html" class="group-hover:underline">Top 5 Kid-Friendly Coding Platforms in 2025</a>
-                          </h2>
-                        </header>
-                        <p class="body-regular text-black-700 line-clamp-2">
-                          Discover safe, engaging platforms like Scratch, Code.org, and Tynker that help kids explore the basics of programming through play.
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-          
-                  <!-- Post 3 -->
-                  <article class="Blog-col gap-4 group">
-                    <figure>
-                      <a href="build-a-diy-robot.html" class="block rounded-2xl overflow-hidden">
-                        <picture>
-                          <source srcset="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1470&q=80" media="(min-width: 769px)">
-                          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1470&q=80" alt="Child building robot at home" loading="lazy" class="aspect-eightbyfive md:aspect-twobyone !object-cover scale-100 group-hover:scale-105 duration-500 object-center object-contain">
-                        </picture>
-                      </a>
-                    </figure>
-                    <div class="Blog-col gap-3 underline-offset-4">
-                      <p class="Blog-row items-center gap-2 smalltext-medium text-black-500">
-                        <a href="build-a-diy-robot.html" class="px-3 py-1 bg-black-50 hover:bg-black-200 hover:text-black-900 rounded-full transition-all duration-300">STEM</a>
-                        <span class="w-8 h-[1px] bg-black-400"></span>
-                        <time datetime="2025-03-30T10:30:00Z"> Mar 30, 2025 </time>
-                      </p>
-                      <div class="space-y-2">
-                        <header>
-                          <h2 class="h4">
-                            <a href="build-a-diy-robot.html" class="group-hover:underline">Build a DIY Robot: Coding for Kids at Home</a>
-                          </h2>
-                        </header>
-                        <p class="body-regular text-black-700 line-clamp-2">
-                          A fun and educational robotics activity that teaches kids about basic circuits and simple coding using tools you already have at home.
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-          
-                  <!-- Post 4 -->
-                  <article class="Blog-col gap-4 group">
-                    <figure>
-                      <a href="how-parents-can-inspire.html" class="block rounded-2xl overflow-hidden">
-                        <picture>
-                          <source srcset="https://images.pexels.com/photos/3861968/pexels-photo-3861968.jpeg" media="(min-width: 769px)">
-                          <img src="https://images.pexels.com/photos/3861968/pexels-photo-3861968.jpeg" alt="Parent helping child with computer" loading="lazy" class="aspect-eightbyfive md:aspect-twobyone !object-cover scale-100 group-hover:scale-105 duration-500 object-center object-contain">
-                        </picture>
-                      </a>
-                    </figure>
-                    <div class="Blog-col gap-3 underline-offset-4">
-                      <p class="Blog-row items-center gap-2 smalltext-medium text-black-500">
-                        <a href="how-parents-can-inspire.html" class="px-3 py-1 bg-black-50 hover:bg-black-200 hover:text-black-900 rounded-full transition-all duration-300">Parenting</a>
-                        <span class="w-8 h-[1px] bg-black-400"></span>
-                        <time datetime="2025-02-15T08:45:00Z"> Feb 15, 2025 </time>
-                      </p>
-                      <div class="space-y-2">
-                        <header>
-                          <h2 class="h4">
-                            <a href="how-parents-can-inspire.html" class="group-hover:underline">How Parents Can Inspire a Love for Coding</a>
-                          </h2>
-                        </header>
-                        <p class="body-regular text-black-700 line-clamp-2">
-                          Simple tips for parents to create a tech-positive environment, even if you have no programming experience yourself.
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-          
-                </div>
-              </div>
+          <!-- Post 3 -->
+          <article class="flex flex-col gap-4 group">
+            <figure>
+              <a href="build-a-diy-robot.html" class="block rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Child building robot" class="aspect-[8/5] object-cover transition duration-500 group-hover:scale-105" />
+              </a>
+            </figure>
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center gap-2 text-sm font-medium text-gray-600">
+                <a href="build-a-diy-robot.html" class="px-3 py-1 bg-gray-100 hover:bg-gray-300 hover:text-black rounded-full transition">STEM</a>
+                <span class="w-8 h-px bg-gray-400"></span>
+                <time datetime="2025-03-30">Mar 30, 2025</time>
+              </p>
+              <h3 class="text-lg font-semibold">
+                <a href="build-a-diy-robot.html" class="hover:underline">Build a DIY Robot: Coding for Kids at Home</a>
+              </h3>
+              <p class="text-gray-700">A fun and educational robotics activity that teaches kids about basic circuits and simple coding using tools you already have at home.</p>
             </div>
-          </section>
-          
-    </main>
+          </article>
 
+          <!-- Post 4 -->
+          <article class="flex flex-col gap-4 group">
+            <figure>
+              <a href="how-parents-can-inspire.html" class="block rounded-2xl overflow-hidden">
+                <img src="https://images.pexels.com/photos/3861968/pexels-photo-3861968.jpeg" alt="Parent helping child" class="aspect-[8/5] object-cover transition duration-500 group-hover:scale-105" />
+              </a>
+            </figure>
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center gap-2 text-sm font-medium text-gray-600">
+                <a href="how-parents-can-inspire.html" class="px-3 py-1 bg-gray-100 hover:bg-gray-300 hover:text-black rounded-full transition">Parenting</a>
+                <span class="w-8 h-px bg-gray-400"></span>
+                <time datetime="2025-02-15">Feb 15, 2025</time>
+              </p>
+              <h3 class="text-lg font-semibold">
+                <a href="how-parents-can-inspire.html" class="hover:underline">How Parents Can Inspire a Love for Coding</a>
+              </h3>
+              <p class="text-gray-700">Simple tips for parents to create a tech-positive environment, even if you have no programming experience yourself.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
-
 </html>

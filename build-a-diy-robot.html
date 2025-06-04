@@ -4,34 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog Post</title>
-  <link rel="stylesheet" href="blogdetails.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <article class="blog-post">
-    <h1 class="title">Build a DIY Robot: Coding for Kids at Home</h1>
-    <div class="meta">
-      <span class="author">By Emma Carter</span>
-      <span class="dot">•</span>
-      <span class="date">March 30, 2025</span>
+<body class="bg-white text-gray-800 leading-relaxed px-8 py-8 flex justify-center font-sans">
+  <article class="max-w-3xl w-full">
+    <h1 class="text-4xl font-bold mb-2 sm:text-2xl">
+      Build a DIY Robot: Coding for Kids at Home
+    </h1>
+
+    <div class="text-sm text-gray-500 mb-6 flex items-center">
+      <span>By Emma Carter</span>
+      <span class="mx-2">•</span>
+      <span>March 30, 2025</span>
     </div>
-  
-    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1470&q=80" alt="Child building robot at home" class="cover-image">
-  
-    <div class="content">
-      <p>Want to combine hands-on learning with basic coding? A DIY robot is the perfect project. It fosters engineering, logic, and curiosity—all from the comfort of your home.</p>
-  
-      <h2>What You'll Need</h2>
-      <ul>
+
+    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1470&q=80"
+         alt="Child building robot at home"
+         class="w-full rounded-lg mb-8" />
+
+    <div class="prose max-w-none">
+      <p>
+        Want to combine hands-on learning with basic coding? A DIY robot is the perfect project.
+        It fosters engineering, logic, and curiosity—all from the comfort of your home.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8">What You'll Need</h2>
+      <ul class="list-disc pl-5 mt-4">
         <li>Arduino or micro:bit kit</li>
         <li>Motors and wheels</li>
         <li>Wires, batteries, and a simple sensor</li>
         <li>A block-based coding app (like MakeCode)</li>
       </ul>
-  
-      <h2>Learning Outcomes</h2>
-      <p>By building a robot, children learn about circuits, logic gates, and how code controls physical actions.</p>
+
+      <h2 class="text-2xl font-semibold mt-8">Learning Outcomes</h2>
+      <p class="mt-4">
+        By building a robot, children learn about circuits, logic gates, and how code controls physical actions.
+      </p>
     </div>
   </article>
-  
 </body>
 </html>
